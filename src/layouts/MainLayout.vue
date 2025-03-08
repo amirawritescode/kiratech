@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh lpR fF">
+  <q-layout>
     <Header></Header>
     <q-page-container class="fit" style="background: linear-gradient(to bottom, #35bad8 18%, white 0%); ">
       <Content></Content>

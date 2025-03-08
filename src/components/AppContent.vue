@@ -1,5 +1,5 @@
 <template>
-    <div class="padding-custom q-mt-xl" style="height: 700px;">
+    <div class="padding-custom q-mt-xl" style="min-height: 700px;">
         <div class="row">
             <div class="col-2"> 
                  <q-img
@@ -30,7 +30,8 @@
                 :loading= "tableLoading"
                 class="custom-table"
                 :filter = "modelSearchTable"
-                >
+                virtual-scroll=""
+            >
                     <template v-slot:top-right>
                         <q-input outlined dense debounce="300" class="q-mr-md" v-model="modelSearchTable" placeholder="Search" :disable = "rows.length == 0 ? true : false">
                             <template v-slot:append>
